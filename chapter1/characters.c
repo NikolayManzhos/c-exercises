@@ -76,6 +76,24 @@ void print_one_word_per_line() {
 }
 
 /**
+ * 1.13
+ * Prints histogram of length of the words in input.
+ */
+void print_length_of_words_histogram() {
+    int c;
+    int counter = 0;
+
+    while ((c = getchar()) != EOF) {
+        if ((c == '\n' || c == ' ' || c == '\t') && counter != 0) {
+            printf("%d\n", counter);
+            counter = 0;
+        } else if (c != '\n') {
+            ++counter;
+        }
+    }
+}
+
+/**
  * 1.14
  * Counts chars in input.
  */

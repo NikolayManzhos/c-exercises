@@ -19,6 +19,7 @@ int main(int argc, char* argv[]) {
                 print_one_word_per_line();
                 break;
             case '5':
+                print_length_of_words_histogram();
                 break;
             case '6':
                 char_freq();
