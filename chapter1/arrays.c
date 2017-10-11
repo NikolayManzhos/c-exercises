@@ -57,3 +57,6 @@ void remove_tail_stuff() {
     }
 }
 
+void detab() {
+
+}

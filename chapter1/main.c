@@ -40,7 +40,6 @@ int main(int argc, char* argv[]) {
                 remove_tail_stuff();
                 break;
             default:
-                count_special_symbols();
                 break;
         }
         input = getchar();
